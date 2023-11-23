@@ -1,14 +1,14 @@
 --local BasePlugin = require "kong.plugins.base_plugin"
 --local OidcHandler = BasePlugin:extend()
 local OidcHandler = {
-  VERSION  = "1.0.0",
-  PRIORITY = 10,
+  --VERSION  = "1.0.0",
+  PRIORITY = 1000,
 }
 local utils = require("kong.plugins.oidc.utils")
 local filter = require("kong.plugins.oidc.filter")
 local session = require("kong.plugins.oidc.session")
 
-OidcHandler.PRIORITY = 1000
+--OidcHandler.PRIORITY = 1000
 
 
 --[[
